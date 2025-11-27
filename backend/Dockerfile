@@ -24,5 +24,5 @@ COPY --from=builder /app/target/*.jar app.jar
 # Expose port
 EXPOSE 8080
 
-# Default run command
-ENTRYPOINT ["java","-jar","app.jar"]
+# Default run command (USE DOCKER CONFIG FILE)
+ENTRYPOINT ["java", "-jar", "app.jar", "--spring.config.name=application-docker"]
