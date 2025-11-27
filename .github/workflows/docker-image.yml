@@ -23,11 +23,11 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: abdulrazak27/lms-backend:latest
+          tags: razak2005/lms-backend:latest
 
       - name: Build and push frontend image
         uses: docker/build-push-action@v3
         with:
           context: ./frontend
           push: true
-          tags: abdulrazak27/lms-frontend:latest
+          tags: razak2005/lms-frontend:latest
